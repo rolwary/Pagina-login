@@ -1,0 +1,134 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(#696969,#D3D3D3);
+}
+.Login h2{
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+    color: #f8f8ff;
+}
+.Login{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 420px;
+    box-sizing: border-box;
+    background: linear-gradient(#778899,#696969);
+    box-shadow: 0px 0px 0px 5px #808080; 
+
+}
+.Login .caixa{
+    position: relative;
+}
+.Login .caixa input{
+    width: 100%;
+    padding: 13px 0px;
+    font-size: 16px;
+    margin-bottom: 80px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #f8f8ff;;
+}
+.Login .caixa label{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    padding: 13px 0px;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 5s;
+    color:#f8f8ff;
+}
+.Login .caixa input:focus~ label,
+.Login .caixa input:valid~label{
+    top: -40px;
+    left: 0;
+    font-size: 20px;
+    color:#f8f8ff;
+}
+.senha{
+    text-align: center;
+    font-size: 13px;  
+    position: relative; 
+    top: -90px;
+    left:-115px;
+}
+.senha a{
+    color:#f8f8ff;
+    text-decoration: none;
+}
+.senha a:hover{
+    color:#f8f8ff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black,
+                0 0 25px #1C1C1C,
+                0 0 75px #363636,
+                0 0 100px #4F4F4F;
+}
+.Submit{
+    text-align: center;
+    position: relative;
+    top: -30px;
+    font-size:25px;
+}
+.Submit a{
+    color: #f8f8ff;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+.Submit a:hover{
+    color: #f8f8ff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black,
+                0px 0px 25px #1C1C1C,
+                0px 0px 75px #363636,
+                0px 0px 100px #4F4F4F;
+}
+.Submit a span{
+    position: absolute;
+    display: block;
+}
+.Submit a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f8f8ff);
+    animation: btn-anim1 1s infinite;
+}
+@keyframes btn-anim1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 37%;
+    }
+}
+    .Submit a span:nth-child(3){
+        bottom: 0;
+        right: -100%;
+        width: 100px;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, azure);
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: .5s
+    }
+    
+    @keyframes btn-anim3 {
+        0% {
+             right: -100%;
+        }
+        50%,100% {
+            right: 37%;
+        }
+    }
